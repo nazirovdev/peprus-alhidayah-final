@@ -46,7 +46,7 @@ class LoanController extends Controller
     {
         $maxLoan = Setting::first()->max_hari_pinjam;
 
-        $tanggalMulai = Carbon::now()->addDays(1);
+        $tanggalMulai = Carbon::now();
         $tanggalAkhir = Carbon::create($tanggalMulai->toDateString())->addDays($maxLoan - 1);
 
         $request->validate([
