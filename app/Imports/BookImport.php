@@ -18,8 +18,8 @@ class BookImport implements ToModel, WithHeadingRow
             'pengarang' => $row['pengarang'],
             'penerbit' => $row['penerbit'],
             'tahun_terbit' => $row['tahun_terbit'],
-            'image' => $row['image'],
             'tanggal_masuk' => $this->transformDate($row['tanggal_masuk']),
+            'jumlah' => $row['jumlah'],
         ]);
     }
 

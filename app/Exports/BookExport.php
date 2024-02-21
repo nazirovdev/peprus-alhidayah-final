@@ -33,7 +33,7 @@ class BookExport implements FromQuery, WithMapping, WithHeadings
             'penerbit',
             'tahun_terbit',
             'tanggal_masuk',
-            'image'
+            'jumlah',
         ];
     }
 }
